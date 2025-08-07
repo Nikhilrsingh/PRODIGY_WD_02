@@ -31,6 +31,20 @@ function reset() {
   timerInterval = null;
   elapsedTime = 0;
   updateDisplay();
+  document.getElementById("laps").innerHTML = "";
+}
+
+function lap() {
+  const lapsContainer = document.getElementById("laps");
+  const displayTime = document.getElementById("display").textContent;
+
+  const lapCount = lapsContainer.children.length;
+
+  if (displayTime !== "00:00:00" && lapCount < 10) {
+    const lapItem = document.createElement("li");
+    lapItem.textContent = `Lap ${lapCount + 1}: ${displayTime}`;
+    lapsContainer.appendChild(lapItem);
+  }
 }
 
 updateDisplay();

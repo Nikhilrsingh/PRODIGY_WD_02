@@ -16,7 +16,8 @@ Create a **stopwatch web application** that:
 
 ## 🎯 Features
 - Start/Pause functionality  
-- Reset button to clear timer  
+- Reset button to clear timer
+- Lap Functionality  
 - Real-time time update  
 - Fully responsive and minimal UI
 
